@@ -1109,7 +1109,7 @@ body .container .about .uper .content {
     padding: 180px 35px 0;
   }
   body header main .home_content h1 {
-    font-size: 34px;
+    font-size: 32px;
     line-height: 54px;
   }
   body header main .home_content p {
@@ -1158,15 +1158,15 @@ body .container .about .uper .content {
     text-align: inherit;
   }
   body .container .about .uper .content h2 {
-    line-height: 60px;
-    font-size: 36px;
+    line-height: 58px;
+    font-size: 32px;
   }
   body .container .about .about_menu {
     padding-top: 20px;
   }
   body .container .about .about_menu aside h3 {
-    font-size: 36px;
-    line-height: 58px;
+    font-size: 32px;
+    line-height: 56px;
   }
   body .container .about .about_menu .slider .main_slide {
     top: 0;
@@ -1183,8 +1183,8 @@ body .container .about .uper .content {
     gap: 40px;
   }
   body .container .testimonials h2 {
-    font-size: 40px;
-    line-height: 58px;
+    font-size: 36px;
+    line-height: 56px;
   }
   body .container .testimonials .inner_container {
     flex-direction: column;
@@ -1198,12 +1198,15 @@ body .container .about .uper .content {
   }
   body .container .testimonials .inner_container .carousel .slider_track .slide .comment p {
     text-align: justify;
-    padding: 0 30px;
+    padding: 0;
   }
   body .container .testimonials .inner_container .nav {
     left: 50%;
     bottom: auto;
     top: 300px;
+  }
+  body .container .contact {
+    padding-top: 100px;
   }
   body .container .contact .row .form_container form .info_grid {
     grid-template-columns: repeat(1, 1fr);
@@ -1220,5 +1223,11 @@ body .container .about .uper .content {
   }
   body footer .grid_container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  body footer .copy {
+    height: 100px;
+  }
+  body footer .copy p {
+    line-height: 28px;
   }
 }/*# sourceMappingURL=main.css.map */

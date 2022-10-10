@@ -973,7 +973,7 @@ body {
           padding: 180px 35px 0;
         }
         .home_content h1 {
-          font-size: 34px;
+          font-size: 32px;
           line-height: 54px;
         }
         .home_content p {
@@ -1024,8 +1024,8 @@ body {
               text-align: inherit;
             }
             h2 {
-              line-height: 60px;
-              font-size: 36px;
+              line-height: 58px;
+              font-size: 32px;
             }
           }
         }
@@ -1033,8 +1033,8 @@ body {
           padding-top: 20px;
         }
         .about_menu aside h3 {
-          font-size: 36px;
-          line-height: 58px;
+          font-size: 32px;
+          line-height: 56px;
         }
         .about_menu .slider {
           .main_slide {
@@ -1056,8 +1056,8 @@ body {
         }
       }
       .testimonials h2 {
-        font-size: 40px;
-        line-height: 58px;
+        font-size: 36px;
+        line-height: 56px;
       }
       .testimonials .inner_container {
         flex-direction: column;
@@ -1069,7 +1069,7 @@ body {
           height: 330px;
           .slider_track .slide .comment p {
             text-align: justify;
-            padding: 0 30px;
+            padding: 0;
           }
         }
         .nav {
@@ -1077,6 +1077,9 @@ body {
           bottom: auto;
           top: 300px;
         }
+      }
+      .contact {
+        padding-top: 100px;
       }
       .contact .row .form_container form .info_grid {
         grid-template-columns: repeat(1, 1fr);
@@ -1093,6 +1096,12 @@ body {
       padding: 50px 40px 0;
       .grid_container {
         grid-template-columns: repeat(1, 1fr);
+      }
+      .copy {
+        height: 100px;
+        p {
+          line-height: 28px;
+        }
       }
     }
   }

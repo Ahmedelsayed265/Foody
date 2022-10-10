@@ -90,6 +90,7 @@ body {
           }
           &:nth-child(3) {
             display: none;
+            min-width: 37px;
           }
         }
       }
@@ -971,6 +972,35 @@ body {
         }
         ul {
           display: none;
+        }
+        &.res_active {
+          padding: 0 25px;
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100vh;
+          background-color: $main_white;
+          z-index: 999999999999999;
+          align-items: baseline;
+          .logo,
+          .nav_btns {
+            height: 80px;
+            @include centerFlex();
+          }
+          .nav_btns {
+            position: absolute;
+            top: 0;
+            right: 25px;
+          }
+          ul {
+            @include centerAbsolute();
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            li {
+              text-align: center;
+            }
+          }
         }
       }
       main {

@@ -187,6 +187,7 @@ body header nav .nav_btns button a {
 }
 body header nav .nav_btns button:nth-child(3) {
   display: none;
+  min-width: 37px;
 }
 body header main {
   width: 100%;
@@ -1107,6 +1108,40 @@ body .container .about .uper .content {
   }
   body header nav ul {
     display: none;
+  }
+  body header nav.res_active {
+    padding: 0 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999999999999999;
+    align-items: baseline;
+  }
+  body header nav.res_active .logo,
+body header nav.res_active .nav_btns {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body header nav.res_active .nav_btns {
+    position: absolute;
+    top: 0;
+    right: 25px;
+  }
+  body header nav.res_active ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+  body header nav.res_active ul li {
+    text-align: center;
   }
   body header main {
     padding: 40px 35px 0;

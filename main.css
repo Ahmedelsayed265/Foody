@@ -30,7 +30,10 @@ a {
   height: 300px;
 }
 
-.get_start {
+body {
+  font-family: "Poppins", sans-serif;
+}
+body .get_start {
   height: 50px;
   width: 210px;
   cursor: pointer;
@@ -48,11 +51,11 @@ a {
   padding-right: 5px;
   font-size: 16px;
 }
-.get_start:hover {
+body .get_start:hover {
   -webkit-animation: moveForward 0.4s linear;
           animation: moveForward 0.4s linear;
 }
-.get_start span {
+body .get_start span {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -61,12 +64,11 @@ a {
   justify-content: center;
   background-color: #febd2e;
 }
-.get_start span i {
+body .get_start span i {
   color: #000;
   font-size: 16px;
   font-weight: 600;
 }
-
 @-webkit-keyframes moveForward {
   0% {
     padding-right: 40px;
@@ -75,7 +77,6 @@ a {
     padding-right: 5px;
   }
 }
-
 @keyframes moveForward {
   0% {
     padding-right: 40px;
@@ -84,8 +85,58 @@ a {
     padding-right: 5px;
   }
 }
-body {
-  font-family: "Poppins", sans-serif;
+body.RTL {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  overflow-x: hidden;
+  font-weight: 500;
+}
+body.RTL .get_start {
+  margin-bottom: 50px;
+  padding-left: 5px;
+  padding-right: 20px;
+  font-size: 16px;
+}
+body.RTL .get_start:hover {
+  -webkit-animation: moveForward 0.4s linear;
+          animation: moveForward 0.4s linear;
+}
+@keyframes moveForward {
+  0% {
+    padding-left: 40px;
+  }
+  100% {
+    padding-left: 5px;
+  }
+}
+body.RTL header main .home_content p {
+  padding-right: 0;
+  padding-left: 100px;
+  margin-bottom: 50px;
+}
+body.RTL .container .about .uper .content {
+  padding-right: 25px;
+}
+body.RTL .container .about .uper .content p {
+  padding-right: 0;
+  padding-left: 100px;
+}
+body.RTL .container .about .about_menu aside .paginations .pagi {
+  padding-left: 0;
+  padding-right: 10px;
+}
+body.RTL .container .testimonials .inner_container .nav {
+  left: 75%;
+}
+body.RTL footer .grid_container .col form input {
+  border-radius: 0 4px 4px 0;
+}
+body.RTL footer .grid_container .col form button {
+  border-radius: 4px 0 0 4px;
+}
+body.RTL footer .grid_container .col h4 i {
+  margin-left: 10px;
+  margin-right: 0;
 }
 body header {
   width: 100%;
@@ -115,6 +166,7 @@ body header nav .logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Poppins", sans-serif;
 }
 body header nav .logo a {
   position: relative;
@@ -867,6 +919,7 @@ body footer .grid_container .col .logo a {
   font-size: 32px;
   font-weight: 600;
   letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
 }
 body footer .grid_container .col .logo a span {
   position: absolute;
@@ -1090,6 +1143,20 @@ body .container .about .uper .content {
   }
 }
 @media (max-width: 450px) {
+  body.RTL header main .home_content h1 {
+    font-size: 28px;
+  }
+  body.RTL .container .testimonials .inner_container .nav {
+    left: 50%;
+  }
+  body.RTL .container .about .uper .content p,
+body.RTL header main .home_content p {
+    padding-left: 0;
+  }
+  body.RTL header nav.res_active .nav_btns {
+    right: auto;
+    left: 25px;
+  }
   body header nav {
     padding: 10px 25px;
   }
@@ -1128,7 +1195,7 @@ body header nav.res_active .nav_btns {
   }
   body header nav.res_active .nav_btns {
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 25px;
   }
   body header nav.res_active ul {

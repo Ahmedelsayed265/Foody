@@ -57,40 +57,4 @@ $main_shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background: rgba(226, 226, 226, 0.5);
   backdrop-filter: blur(12px);
 }
-.get_start {
-  height: 50px;
-  width: 210px;
-  cursor: pointer;
-  color: $main_white;
-  @include clearInput();
-  @include space-between();
-  background-color: $main_black;
-  margin-bottom: 40px;
-  border-radius: 25px;
-  padding-left: 20px;
-  padding-right: 5px;
-  font-size: 16px;
-  &:hover {
-    animation: moveForward 0.4s linear;
-  }
-  span {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    @include centerFlex();
-    background-color: $main_yellow;
-    i {
-      color: $main_black;
-      font-size: 16px;
-      font-weight: 600;
-    }
-  }
-}
-@keyframes moveForward {
-  0% {
-    padding-right: 40px;
-  }
-  100% {
-    padding-right: 5px;
-  }
-}
+

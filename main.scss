@@ -1,6 +1,95 @@
 @import "./sass/mixins";
 body {
   font-family: "Poppins", sans-serif;
+  .get_start {
+    height: 50px;
+    width: 210px;
+    cursor: pointer;
+    color: $main_white;
+    @include clearInput();
+    @include space-between();
+    background-color: $main_black;
+    margin-bottom: 40px;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 5px;
+    font-size: 16px;
+    &:hover {
+      animation: moveForward 0.4s linear;
+    }
+    span {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      @include centerFlex();
+      background-color: $main_yellow;
+      i {
+        color: $main_black;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
+  @keyframes moveForward {
+    0% {
+      padding-right: 40px;
+    }
+    100% {
+      padding-right: 5px;
+    }
+  }
+  &.RTL {
+    font-family: "Tajawal", sans-serif;
+    direction: rtl;
+    overflow-x: hidden;
+    font-weight: 500;
+    .get_start {
+      margin-bottom: 50px;
+      padding-left: 5px;
+      padding-right: 20px;
+      font-size: 16px;
+      &:hover {
+        animation: moveForward 0.4s linear;
+      }
+    }
+    @keyframes moveForward {
+      0% {
+        padding-left: 40px;
+      }
+      100% {
+        padding-left: 5px;
+      }
+    }
+    header main .home_content p {
+      padding-right: 0;
+      padding-left: 100px;
+      margin-bottom: 50px;
+    }
+    .container .about .uper .content {
+      padding-right: 25px;
+    }
+    .container .about .uper .content p {
+      padding-right: 0;
+      padding-left: 100px;
+    }
+    .container .about .about_menu aside .paginations .pagi {
+      padding-left: 0;
+      padding-right: 10px;
+    }
+    .container .testimonials .inner_container .nav {
+      left: 75%;
+    }
+    footer .grid_container .col form input {
+      border-radius: 0 4px 4px 0;
+    }
+    footer .grid_container .col form button {
+      border-radius: 4px 0 0 4px;
+    }
+    footer .grid_container .col h4 i {
+      margin-left: 10px;
+      margin-right: 0;
+    }
+  }
   header {
     width: 100%;
     height: 105vh;
@@ -23,6 +112,7 @@ body {
         min-width: 100px;
         height: 100%;
         @include centerFlex();
+        font-family: "Poppins", sans-serif;
         a {
           position: relative;
           color: $main_black;
@@ -722,6 +812,7 @@ body {
             font-size: 32px;
             font-weight: 600;
             letter-spacing: 1px;
+            font-family: "Poppins", sans-serif;
             span {
               position: absolute;
               right: -5px;
@@ -954,6 +1045,22 @@ body {
 }
 @media (max-width: 450px) {
   body {
+    &.RTL {
+      header main .home_content h1 {
+        font-size: 28px;
+      }
+      .container .testimonials .inner_container .nav {
+        left: 50%;
+      }
+      .container .about .uper .content p,
+      header main .home_content p {
+        padding-left: 0;
+      }
+      header nav.res_active .nav_btns {
+        right: auto;
+        left: 25px;
+      }
+    }
     header {
       nav {
         padding: 10px 25px;
@@ -989,7 +1096,7 @@ body {
           }
           .nav_btns {
             position: absolute;
-            top: 0;
+            top: 10px;
             right: 25px;
           }
           ul {

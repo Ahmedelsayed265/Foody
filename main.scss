@@ -88,7 +88,7 @@ body {
           a {
             color: $main_white;
           }
-          &:nth-child(2) {
+          &:nth-child(3) {
             display: none;
           }
         }
@@ -961,6 +961,12 @@ body {
           button {
             font-size: 14px;
             padding: 0 12px;
+            &:nth-child(1) {
+              display: none;
+            }
+            &:nth-child(3) {
+              display: block;
+            }
           }
         }
         ul {
@@ -973,8 +979,8 @@ body {
           padding: 180px 35px 0;
         }
         .home_content h1 {
-          font-size: 32px;
-          line-height: 54px;
+          font-size: 30px;
+          line-height: 52px;
         }
         .home_content p {
           padding-right: 0;

@@ -185,7 +185,7 @@ body header nav .nav_btns button {
 body header nav .nav_btns button a {
   color: #fff;
 }
-body header nav .nav_btns button:nth-child(2) {
+body header nav .nav_btns button:nth-child(3) {
   display: none;
 }
 body header main {
@@ -1099,6 +1099,12 @@ body .container .about .uper .content {
     font-size: 14px;
     padding: 0 12px;
   }
+  body header nav .nav_btns button:nth-child(1) {
+    display: none;
+  }
+  body header nav .nav_btns button:nth-child(3) {
+    display: block;
+  }
   body header nav ul {
     display: none;
   }
@@ -1109,8 +1115,8 @@ body .container .about .uper .content {
     padding: 180px 35px 0;
   }
   body header main .home_content h1 {
-    font-size: 32px;
-    line-height: 54px;
+    font-size: 30px;
+    line-height: 52px;
   }
   body header main .home_content p {
     padding-right: 0;
